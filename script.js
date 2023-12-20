@@ -146,10 +146,10 @@ function isAverageLunchPriceTrue(fDish, sDish, average) {
 function drowPiramyd(height) {
     for (let i = 0; i < height; i++) {
         let str = '';
-        for (let j = 0; j < height - i - 1; j++){
+        for (let j = 0; j < height - i - 1; j++){   //создаю цикл, который будет ставить определенное колтчество пробелов на строчке, на каждой строчке количество пробелов уменьщается на -i и -1
             str += ' ';
         }
-        for (let j = 0; j < 2 * i + 1; j++){
+        for (let j = 0; j < 2 * i + 1; j++){ // создаю цикл, который будет ставить звездочки. При уменьшении пробелов на каждой строчке, добавляются по две новых звездочки
             str += '*';
         }
         console.log(str);
